@@ -1,0 +1,26 @@
+<!--
+Add this span with ID 'footer-copyright' to the Divi -> Theme Customizer -> Footer -> Bottom Bar -> EDIT FOOTER CREDITS
+-->
+
+<span id="footer-copyright"></span>
+
+<!--
+    Add the bellow code to the Divi -> Theme Option -> Integration -> Add code to the < head > of your blog
+-->
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var currentYear = new Date().getFullYear();
+      var copyrightElement = document.getElementById("footer-copyright");
+  
+      if (copyrightElement) {
+        copyrightElement.textContent = "\u00A9 " + currentYear;
+      }
+    });
+  
+  </script>
+
+  <!--
+    The code above will generate the curret year and place it indie that span
+  -->
