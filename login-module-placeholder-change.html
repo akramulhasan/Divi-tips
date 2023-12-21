@@ -1,0 +1,20 @@
+<!--
+To change the Login module default placholder, you can add a custom class name to the module from the Settings-> Advanced -> CSS ID & Classes -> CSS Class
+ex: my-login
+-->
+
+<!--
+    Add the bellow code to the Divi -> Theme Option -> Integration -> Add code to the < head > of your blog
+-->
+
+<script>
+
+  $(document).ready(function(){
+    $('.my-login input[type="text"]').attr('placeholder', 'Custom Placeholder');
+  });
+  
+</script>
+
+  <!--
+    The code above will replace the default placeholder by your defined one
+  -->
