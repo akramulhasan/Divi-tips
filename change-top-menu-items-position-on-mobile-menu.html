@@ -1,0 +1,21 @@
+<!--
+If you have a top/secondary menu on the Divi default header, then on mobile menu Divi automatically merge the two menu and top menu items appeand after the Main menu items.
+
+If you want the reverse, means the top menu item will show first and then the main menu, the bellow is the solution.
+-->
+
+<!--
+    Add the bellow code to the Divi -> Theme Option -> Integration -> Add code to the < head > of your blog
+-->
+
+<script>
+
+  $(document).ready(function(){
+    $('.my-login input[type="text"]').attr('placeholder', 'Custom Placeholder');
+  });
+  
+</script>
+
+  <!--
+    The code above will replace the default placeholder by your defined one
+  -->

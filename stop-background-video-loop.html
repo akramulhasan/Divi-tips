@@ -1,0 +1,23 @@
+<!--
+First, add a custom class name “no-loop” to the Section 
+Settings -> Advanced -> CSS ID & Classes -> CSS Class
+-->
+
+
+<!--
+    Add the bellow code to the Divi -> Theme Option -> Integration -> Add code to the < head > of your blog
+-->
+
+<script>
+  (function($) {
+      $(document).ready(function() {
+          $('.no-loop .et_pb_section_video_bg').each(function() {
+              $(this).find('video').removeAttr('loop');
+          });
+      });
+  })(jQuery);
+</script>
+
+  <!--
+    The code above will generate the curret year and place it indie that span
+  -->
